@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stockmanagement.FXMLMainWindowController">
+   <children>
+      <ListView fx:id="items" onMouseClicked="#addItemDialog" prefWidth="200.0" />
+      <BorderPane prefHeight="200.0" prefWidth="400.0">
+         <center>
+            <ListView fx:id="display" onMouseClicked="#editItemDialog" prefWidth="600.0" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Label fx:id="lblTotal" text="Label" BorderPane.alignment="TOP_LEFT" />
+         </bottom>
+      </BorderPane>
+   </children>
+</HBox>
