@@ -1,5 +1,6 @@
 # Inter Window Communication
 ![alt text](images/Communication_Overview.png "Overview of the window communication")
+
 The window above shows a small JavaFX application that has a list of items on the left and sales on the right. When either item is clicked then dialog box is opened. Data on the dialog box comes from the main window and then when the dialog is accepted the data is sent back to the main window.
 
 The flow of communication is shown by the coloured arrows. Blue from the main window to the dialog box and red from the dialog box bac to the main window.
